@@ -31,7 +31,7 @@ There are currently 18 planned service adapters (check box indicates readiness):
 - [ ] [Email](https://github.com/isotopeltd/isotope_auth_email) passwordless link sent via email
 - [ ] [Facebook](https://github.com/isotopeltd/isotope_auth_facebook)
 - [ ] [GitHub](https://github.com/isotopeltd/isotope_auth_github)
-- [ ] [Google](https://github.com/isotopeltd/isotope_auth_google)
+- [x] [Google](https://github.com/isotopeltd/isotope_auth_google)
 - [ ] [LinkedIn](https://github.com/isotopeltd/isotope_auth_linkedin)
 - [ ] [Microsoft](https://github.com/isotopeltd/isotope_auth_microsoft)
 - [ ] [Mock](https://github.com/isotopeltd/isotope_auth_mock) for localised testing
