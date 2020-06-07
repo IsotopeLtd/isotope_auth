@@ -24,7 +24,7 @@ import 'package:isotope_auth/isotope_auth';
 
 There are currently 18 planned service adapters (check box indicates readiness):
 
-- [ ] [Anonymous](https://github.com/isotopeltd/isotope_auth_anonymous)
+- [x] [Anonymous](https://github.com/isotopeltd/isotope_auth_anonymous)
 - [ ] [Apple](https://github.com/isotopeltd/isotope_auth_apple)
 - [ ] [Azure Active Directory](https://github.com/isotopeltd/isotope_auth_azure)
 - [ ] [Device](https://github.com/isotopeltd/isotope_auth_device) local device fingerprint, face id, pattern or pin
