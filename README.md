@@ -29,7 +29,7 @@ There are currently 18 planned service adapters (checked boxes indicate availabi
 - [ ] [Azure Active Directory](https://github.com/isotopeltd/isotope_auth_azure)
 - [ ] [Device](https://github.com/isotopeltd/isotope_auth_device) local device fingerprint, face id, pattern or pin
 - [ ] [Email](https://github.com/isotopeltd/isotope_auth_email) passwordless link sent via email
-- [ ] [Facebook](https://github.com/isotopeltd/isotope_auth_facebook)
+- [x] [Facebook](https://github.com/isotopeltd/isotope_auth_facebook)
 - [ ] [GitHub](https://github.com/isotopeltd/isotope_auth_github)
 - [x] [Google](https://github.com/isotopeltd/isotope_auth_google)
 - [ ] [LinkedIn](https://github.com/isotopeltd/isotope_auth_linkedin)
