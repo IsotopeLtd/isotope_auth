@@ -10,6 +10,7 @@ class AuthServiceAdapter implements AuthService {
   @override
   void dispose() {
     authStateSubscription?.cancel();
+    authStateChangedController?.close();
   }
 
   @override
