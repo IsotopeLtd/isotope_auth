@@ -22,7 +22,7 @@ import 'package:isotope_auth/isotope_auth';
 
 ## Service Adapters
 
-There are currently 18 planned service adapters (check box indicates readiness):
+There are currently 18 planned service adapters (checked boxes indicate availability):
 
 - [x] [Anonymous](https://github.com/isotopeltd/isotope_auth_anonymous)
 - [ ] [Apple](https://github.com/isotopeltd/isotope_auth_apple)
