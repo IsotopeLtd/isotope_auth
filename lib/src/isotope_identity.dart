@@ -1,8 +1,8 @@
 import 'package:meta/meta.dart';
 
 @immutable
-class AuthIdentity {
-  const AuthIdentity({
+class IsotopeIdentity {
+  const IsotopeIdentity({
     @required this.uid,
     this.email,
     this.photoUrl,

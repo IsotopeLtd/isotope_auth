@@ -1,20 +1,20 @@
 import 'dart:async';
-import 'package:isotope_auth/src/auth_identity.dart';
 import 'package:isotope_auth/src/auth_provider.dart';
 import 'package:isotope_auth/src/auth_service.dart';
+import 'package:isotope_auth/src/isotope_identity.dart';
 
 class AuthServiceAdapter implements AuthService {
-  final StreamController<AuthIdentity> authStateChangedController = StreamController<AuthIdentity>.broadcast();
-  StreamSubscription<AuthIdentity> authIdentitySubscription;
+  final StreamController<IsotopeIdentity> authStateChangedController = StreamController<IsotopeIdentity>.broadcast();
+  StreamSubscription<IsotopeIdentity> authStateSubscription;
 
   @override
   void dispose() {
-    authIdentitySubscription?.cancel();
+    authStateSubscription?.cancel();
   }
 
   @override
   void setup() {
-    authIdentitySubscription = onAuthStateChanged.listen((AuthIdentity identity) {
+    authStateSubscription = onAuthStateChanged.listen((IsotopeIdentity identity) {
       authStateChangedController.add(identity);
     }, onError: (dynamic error) {
       authStateChangedController.addError(error);
@@ -25,15 +25,15 @@ class AuthServiceAdapter implements AuthService {
   AuthProvider get provider => throw UnimplementedError();
 
   @override
-  Future<AuthIdentity> currentIdentity() {
+  Future<IsotopeIdentity> currentIdentity() {
     throw UnimplementedError();
   }
 
   @override
-  Stream<AuthIdentity> get onAuthStateChanged => throw UnimplementedError();
+  Stream<IsotopeIdentity> get onAuthStateChanged => throw UnimplementedError();
 
   @override
-  Future<AuthIdentity> signIn(Map<String, dynamic> credentials) {
+  Future<IsotopeIdentity> signIn(Map<String, dynamic> credentials) {
     throw UnimplementedError();
   }
 
