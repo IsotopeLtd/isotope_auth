@@ -1,0 +1,20 @@
+enum AuthProvider { 
+  anonymous,
+  apple,
+  azure,
+  device,
+  email,
+  facebook,
+  github,
+  google,
+  linkedin,
+  microsoft,
+  mock,
+  multifactor,
+  oauth2,
+  password, 
+  phone,
+  slack,
+  twitter,
+  web
+}
