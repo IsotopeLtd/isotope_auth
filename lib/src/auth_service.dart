@@ -9,9 +9,7 @@ abstract class AuthService {
   Stream<AuthIdentity> get onAuthStateChanged;
   void setup();
   Future<AuthIdentity> signIn(Map<String, dynamic> credentials);
-  void signInCallback();
   Future<void> signOut();
-  void signOutCallback();
   AuthStatus status;
   AuthStrategy strategy;
 }

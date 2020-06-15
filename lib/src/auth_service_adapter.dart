@@ -34,13 +34,7 @@ class AuthServiceAdapter implements AuthService {
   Future<AuthIdentity> signIn(Map<String, dynamic> credentials) => throw UnimplementedError();
 
   @override
-  void signInCallback() => throw UnimplementedError();
-
-  @override
   Future<void> signOut() => throw UnimplementedError();
-
-  @override
-  void signOutCallback() => throw UnimplementedError();
 
   @override
   AuthStrategy get strategy => throw UnimplementedError();
