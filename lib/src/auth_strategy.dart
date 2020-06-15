@@ -1,0 +1,20 @@
+enum AuthStrategy { 
+  Anonymous,
+  Apple,
+  Azure,
+  Device,
+  Email,
+  Facebook,
+  GitHub,
+  Google,
+  LinkedIn,
+  Microsoft,
+  Mock,
+  Multifactor,
+  OAuth2,
+  Password, 
+  Phone,
+  Slack,
+  Twitter,
+  Web
+}

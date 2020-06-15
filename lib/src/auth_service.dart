@@ -1,13 +1,17 @@
 import 'dart:async';
-import 'package:isotope_auth/src/auth_provider.dart';
-import 'package:isotope_auth/src/isotope_identity.dart';
+import 'package:isotope_auth/src/auth_identity.dart';
+import 'package:isotope_auth/src/auth_status.dart';
+import 'package:isotope_auth/src/auth_strategy.dart';
 
 abstract class AuthService {
-  Future<IsotopeIdentity> currentIdentity();
+  Future<AuthIdentity> currentIdentity();
   void dispose();
-  Stream<IsotopeIdentity> get onAuthStateChanged;
-  AuthProvider get provider;
+  Stream<AuthIdentity> get onAuthStateChanged;
   void setup();
-  Future<IsotopeIdentity> signIn(Map<String, dynamic> credentials);
+  Future<AuthIdentity> signIn(Map<String, dynamic> credentials);
+  void signInCallback();
   Future<void> signOut();
+  void signOutCallback();
+  AuthStatus status;
+  AuthStrategy strategy;
 }
